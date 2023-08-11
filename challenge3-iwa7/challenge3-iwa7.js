@@ -18,9 +18,9 @@ const owedCalc = function (balance) {
 
 const owed = owedCalc(Number(leoBalance) + Number(sarahBalance));
 const leo = `${leoName} ${leoSurname.trim()} (Owed: ${owedCalc(leoBalance)})`;
-const sarah = `${sarahName.trim()} ${sarahSurname} (Owed: ${owedCalc(
-	sarahBalance
-)})`;
+const sarah =
+	`${sarahName.trim()} ${sarahSurname}` + ` (Owed: ${owedCalc(sarahBalance)})`;
+
 const total = `Total amount owed: ${owed}`;
 const result = `
 ${leo}  
